@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap');
+
+/* DEBUG */
+.debug{
+    border: 1px solid red;
+}
+/* DEBUG */
+
+
+
+
+/* GENERAL */
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h6{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.black{
+    background-color: #000;
+    
+}
+.blue{
+    background-color: #27aabe;
+    
+}
+.button{
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* GENERAL */
+
+
+
+/* HEADER */
+
+nav{
+    width: 100%;
+    background-color: #27aabe;
+    height: 100px;
+}
+nav li{
+    display: inline-block;
+    margin: 0px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+nav li:nth-of-type(7){
+    padding:5px 15px;
+    background-color: black;
+}
+
+nav a{
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+}
+.hero{
+    
+    height: 950px;
+    background-image: url('../img/home_slider_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.hero h1{
+    font-size: 150px;
+    font-weight: 700;
+}
+.hero h5{
+    font-weight: 300;
+    margin: 50px 0px;
+}
+
+
+.description{
+    text-align: center;
+    height: 300px;
+    background-color: #eee3d8;
+}
+.description p{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* HEADER */
+
+
+/* MAIN CONTENT */
+.lastNewsContainer{
+    background-color: #fff;
+}
+.lastNewsContainer .container .row{
+    margin: 50px 0px;
+}
+.introductionText{
+    text-align: center;
+}
+
+
+.mini-hr{
+    width: 70px;
+    height: 2px;
+    background-color: #fc8c5e;
+    margin-top: 15px;
+}
+
+.lastNewsContainer h5{
+    font-size: 17px;
+}
+.postDate{
+    font-size: 12px;
+}
+.newsDescription{
+font-size: 15px;
+}
+.smallPosts img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.featuredArticle{
+    height: 600px;
+    background-image: url('../img/featured_article_1_bg.jpg');
+    background-size: cover;
+    color: #fff;
+}
+.featuredArticle p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.reviewedProduct{
+    height: 500px;
+    background-image: url('../img/featured_article_2_bg.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.tutorialArticle{
+    margin: 15px 0px;
+}
+.tutorialArticle div:last-child{
+    margin-left: 15px;
+}
+
+
+
+
+.redirection{
+    height: 120px;
+    background-color: black;
+}
+
+
+.forumSections{
+    background-color: #f2f2f2;
+    padding: 50px 0px;
+}
+.forumSections .container div.row:not(:first-child){
+    margin: 50px 0px;
+}
+.forumTabs > div{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 3px solid #399bc0
+}
+.forumSections i.fas, .forumSections i.fab{
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fc8c5e;
+    color: white;
+    border-radius: 50%;
+
+}
+
+
+.join{
+    color: white;
+    height: 500px;
+    background-image: url('../img/join_now_cta_bg.jpg');
+    background-size: cover;
+    text-align: center;
+}
+.join div{
+    width: 600px;
+}
+.join h1{
+    font-size: 70px;
+}
+.join p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+.newsletter{
+    text-align: center;
+    height: 300px;
+    background-color: #f2f2f2;
+}
+.newsletter h3{
+    margin-bottom: 35px;
+}
+.newsletter input{
+    width: 500px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 5px;
+}
+/* MAIN CONTENT */
+
+
+footer{
+    padding: 100px;
+    height: 500px;
+}
+footer li{
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 2.3;
+}
+footer i.fab{
+    text-align: center;
+    line-height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}

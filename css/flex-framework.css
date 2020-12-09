@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.dFlex{
+    display: flex;
+}
+
+.fDirectionCol{
+    flex-direction: column;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+.justifyBetween{
+    justify-content: space-between;
+}
+.justifyAround{
+    justify-content: space-around;
+}
+.justifyStart{
+    justify-content: start;
+}
+.justifyEnd{
+    justify-content: end;
+}
+
+.alignCenter{
+    align-items: center;
+}
+.alignStart{
+    align-items: flex-start;
+}
+.alignEnd{
+    align-items: flex-end;
+}

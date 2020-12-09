@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------ VUE JS ------>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+    <!------ AXOS ------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+
+    <!-- ---- BOOTSTRAP ---- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <!------ FONT AWESOME ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+
+
+    <!-- ---- CUSTOM CSS ---- -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Avada Forum</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class=" d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="col d-flex align-items-end justify-content-between">
+                            <ul>
+                                <li v-for="links in navLinks">
+                                    {{links}}
+                                </li>
+                                <li>
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero  d-flex justify-content-start align-items-center">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col ">
+                            <h1>Tech Forum!</h1>
+                            <h5>Discuss all the lastest thechnology news and trends</h5>
+                            <a class="blue button" href="">GET AVADA NOW! > </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description  d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col">
+                           <h6>AVADA FORUM IS THE PLACE TO BE</h6>
+                           <p>In quis lectus sed leo elementum faucibus in dapibus dictum. <br>
+                            Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. <br>
+                            Dolor at, bibendum purus. Donec vehicula nec tortor a finibus.
+                         </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="lastNewsContainer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col introductionText d-flex flex-column justify-content-center align-items-center">
+                            <h6>PHASELLUS EGET METUS</h6>
+                            <h2>All the lates news</h2>
+                            <div class="mini-hr"></div>
+                        </div>
+                    </div>
+
+                    <div class="row smallPosts">
+                        <div class="col">
+                            <img src="img/post_feat_img_20-320x202.jpg" alt="">
+                            <h5>Morbi vitae dui euismod vulputate sollicitudin</h5>
+                            <p class="postDate">October 11th, 2015 | 0 Comments</p>
+                            <p class="newsDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis assumenda repellendus dolor quas amet beatae adipisci sequi placeat natus ab non, vel explicabo earum aliquam ducimus nulla dolorum veniam.</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/post_feat_img_22-320x202.jpg" alt="">
+                            <h5>Morbi vitae dui euismod vulputate sollicitudin</h5>
+                            <p class="postDate">October 11th, 2015 | 0 Comments</p>
+                            <p class="newsDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis assumenda
+                                repellendus dolor quas amet beatae adipisci sequi placeat natus ab non, vel explicabo earum aliquam ducimus
+                                nulla dolorum veniam.</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/post_feat_img_21-320x202.jpg" alt="">
+                            <h5>Morbi vitae dui euismod vulputate sollicitudin</h5>
+                            <p class="postDate">October 11th, 2015 | 0 Comments</p>
+                            <p class="newsDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis assumenda
+                                repellendus dolor quas amet beatae adipisci sequi placeat natus ab non, vel explicabo earum aliquam ducimus
+                                nulla dolorum veniam.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class=" container featuredArticle d-flex flex-column justify-content-center">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col">
+                                        <h6>FEATURED ARTICLE</h6>
+                                        <h2>Cras malesuada et orci eget pharetra</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem quo quae nihil nostrum nemo animi vel
+                                            illo, assumenda repellat doloremque soluta. Dolore tempore saepe quo dolorum inventore, quos harum.</p>
+                                            <a class="black button"href="">READ MORE > </a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row smallPosts">
+                        <div class="col">
+                            <img src="img/post_feat_img_20-320x202.jpg" alt="">
+                            <h5>Morbi vitae dui euismod vulputate sollicitudin</h5>
+                            <p class="postDate">October 11th, 2015 | 0 Comments</p>
+                            <p class="newsDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis assumenda
+                                repellendus dolor quas amet beatae adipisci sequi placeat natus ab non, vel explicabo earum aliquam ducimus
+                                nulla dolorum veniam.</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/post_feat_img_22-320x202.jpg" alt="">
+                            <h5>Morbi vitae dui euismod vulputate sollicitudin</h5>
+                            <p class="postDate">October 11th, 2015 | 0 Comments</p>
+                            <p class="newsDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis assumenda
+                                repellendus dolor quas amet beatae adipisci sequi placeat natus ab non, vel explicabo earum aliquam ducimus
+                                nulla dolorum veniam.</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/post_feat_img_21-320x202.jpg" alt="">
+                            <h5>Morbi vitae dui euismod vulputate sollicitudin</h5>
+                            <p class="postDate">October 11th, 2015 | 0 Comments</p>
+                            <p class="newsDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis assumenda
+                                repellendus dolor quas amet beatae adipisci sequi placeat natus ab non, vel explicabo earum aliquam ducimus
+                                nulla dolorum veniam.</p>
+                        </div>
+                    
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-8">
+                            <div class="container reviewedProduct d-flex flex-column justify-content-center">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col">
+                                        <h6>REVIEWED PRODUCT</h6>
+                                        <h2>Cras malesuada et orci eget pharetra</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde exercitationem quo quae nihil nostrum nemo animi vel
+                                            illo, assumenda repellat doloremque soluta. Dolore tempore saepe quo dolorum inventore, quos harum.</p>
+                                        <a class="black button" href="">READ MORE > </a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 tutorials">
+
+                            <div>
+                                <h3>Tutorials & Guides</h3>
+                                <div class="mini-hr"></div>
+                            </div>
+
+                            <div class="d-flex flex-column justify-content-around">
+                                <div class="tutorialArticle d-flex">
+                                    <div>
+                                        <img src="img/post_feat_img_22-147x118.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>Donec ornare pretium eget sceglisque justo</h5>
+                                        <p class="postDate">October 11th, 2015 | Comments Off</p>
+                                    </div>
+                                </div>
+                                <div class="tutorialArticle d-flex">
+                                    <div>
+                                        <img src="img/post_feat_img_22-147x118.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>Donec ornare pretium eget sceglisque justo</h5>
+                                        <p class="postDate">October 11th, 2015 | Comments Off</p>
+                                    </div>
+                                </div>
+                                <div class="tutorialArticle d-flex">
+                                    <div>
+                                        <img src="img/post_feat_img_22-147x118.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>Donec ornare pretium eget sceglisque justo</h5>
+                                        <p class="postDate">October 11th, 2015 | Comments Off</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="redirection d-flex justify-content-center align-items-center">
+                <a class="button" href="">READ OUR BLOG > </a>
+            </div>
+
+            <div class="forumSections">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col introductionText d-flex flex-column justify-content-center align-items-center">
+                            <h6>PHASELLUS EGET METUS</h6>
+                            <h2>Forum Sections</h2>
+                            <div class="mini-hr"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fas fa-file-alt fa-2x"></i>
+                                <h4>News & Community</h4>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fab fa-apple fa-2x"></i>
+                                <h4>Apple Forum</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fab fa-windows fa-2x"></i>
+                                <h4>Microsoft Forum</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fab fa-android fa-2x"></i>
+                                <h4>Android Forum</h4>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fas fa-coffee fa-2x"></i>
+                                <h4>General Discussion</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fas fa-cubes fa-2x"></i>
+                                <h4>Apps & Software</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fas fa-laptop fa-2x"></i>
+                                <h4>Gadget & Stuff</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="col d-flex flex-column align-items-center justify-content-around forumTabs">
+                            <div class="d-flex flex-column align-items-center justify-content-around">
+                                <i class="fas fa-wrench fa-2x"></i>
+                                <h4>Tutorials & Guides</h4>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="redirection d-flex justify-content-center align-items-center">
+                <a class="button" href="">GO TO OUR FORUM > </a>
+            </div>
+
+            <div class="join d-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Hey! Join to our Community</h1>
+                    <p>Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vulputate purus ipsums dolores </p>
+                    <a class="blue button" href="">SIGN UP > </a>
+                </div>
+            </div>
+
+            <div class="newsletter d-flex justify-content-center align-items-center">
+                <div>
+                    <h3>Subscribe to our Newsletter</h3>
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <input type="email" placeholder="Insert your email">
+                        <a class="black button" href="">SEND</a>
+                    </div>
+                </div>
+                
+            </div>   
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5>AVADA TECH FORUM</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius doloremque, necessitatibus eaque ipsum maxime adipisci nisi reiciendis pariatur tenetur mollitia. Voluptatem illo doloribus dolorum cupiditate temporibus nisi soluta earum.</p>
+                    </div>
+                    <div class="col">
+                        <h5>POPULAR TOPICS</h5>
+                        <ul class="p-0">
+                            <li v-for="elements in popularTopics">
+                               > {{ elements }}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>RECENT TOPICS</h5>
+                        <ul class="p-0">
+                            <li v-for="elements in popularTopics">
+                                > {{ elements }}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>LASTEST REPLIES</h5>
+                        <ul class="p-0">
+                            <li v-for="elements in popularTopics">
+                                > {{ elements }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col">
+                        &copy; Copiright 2012-2020 | Avada Theme by Michele Terzo | All Rights Reserved | Powered by Boolean Careers
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
