@@ -31,6 +31,8 @@
 <body>
     <div id="app">
         <header>
+
+            <!-- nav-bar -->
             <nav class=" d-flex align-items-center">
                 <div class="container">
                     <div class="row">
@@ -40,7 +42,7 @@
                         <div class="col d-flex align-items-end justify-content-between">
                             <ul>
                                 <li v-for="links in navLinks">
-                                    {{links}}
+                                    <a href="">{{links}}</a>
                                 </li>
                                 <li>
                                     <i class="fas fa-search" aria-hidden="true"></i>
@@ -50,7 +52,10 @@
                     </div>
                 </div>
             </nav>
-            <div class="hero  d-flex justify-content-start align-items-center">
+            <!-- nav-bar -->
+
+            <!-- jumbotron -->
+            <div class="hero d-flex justify-content-start align-items-center">
                 <div class="container ">
                     <div class="row">
                         <div class="col ">
@@ -74,9 +79,12 @@
                     </div>
                 </div>
             </div>
+            <!-- jumbotron -->
+
         </header>
 
         <main>
+            <!-- Sezione ultime news -->
             <div class="lastNewsContainer">
                 <div class="container">
                     <div class="row">
@@ -220,11 +228,17 @@
                     </div>
                 </div> 
             </div>
+            <!-- Sezione ultime news -->
 
+
+            <!-- Sezione intermedia a sfondo nero -->
             <div class="redirection d-flex justify-content-center align-items-center">
-                <a class="button" href="">READ OUR BLOG > </a>
+                <a href="">READ OUR BLOG > </a>
             </div>
+            <!-- Sezione intermedia a sfondo nero -->
 
+
+            <!-- Sezione scelta del forum -->
             <div class="forumSections">
                 <div class="container">
 
@@ -313,11 +327,17 @@
 
                 </div>
             </div>
+            <!-- Sezione scelta del forum -->
 
+
+            <!-- Sezione intermedia a sfondo nero -->
             <div class="redirection d-flex justify-content-center align-items-center">
-                <a class="button" href="">GO TO OUR FORUM > </a>
+                <a href="">GO TO OUR FORUM > </a>
             </div>
+            <!-- Sezione intermedia a sfondo nero -->
 
+
+            <!-- Sezione di join della community -->
             <div class="join d-flex align-items-center justify-content-center">
                 <div>
                     <h1>Hey! Join to our Community</h1>
@@ -325,7 +345,10 @@
                     <a class="blue button" href="">SIGN UP > </a>
                 </div>
             </div>
+            <!-- Sezione di join della community -->
 
+
+            <!-- Iscrizione alla newsletter -->
             <div class="newsletter d-flex justify-content-center align-items-center">
                 <div>
                     <h3>Subscribe to our Newsletter</h3>
@@ -336,56 +359,60 @@
                 </div>
                 
             </div>   
+            <!-- Iscrizione alla newsletter -->
+
         </main>
 
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h5>AVADA TECH FORUM</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius doloremque, necessitatibus eaque ipsum maxime adipisci nisi reiciendis pariatur tenetur mollitia. Voluptatem illo doloribus dolorum cupiditate temporibus nisi soluta earum.</p>
+            <div class="bottomPageLinks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h5>AVADA TECH FORUM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius doloremque, necessitatibus eaque ipsum maxime adipisci nisi reiciendis pariatur tenetur mollitia. Voluptatem illo doloribus dolorum cupiditate temporibus nisi soluta earum.</p>
+                        </div>
+                        <div class="col">
+                            <h5>POPULAR TOPICS</h5>
+                            <ul class="p-0">
+                                <li v-for="elements in popularTopics">
+                                   > {{ elements }}
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col">
+                            <h5>RECENT TOPICS</h5>
+                            <ul class="p-0">
+                                <li v-for="elements in popularTopics">
+                                    > {{ elements }}
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col">
+                            <h5>LASTEST REPLIES</h5>
+                            <ul class="p-0">
+                                <li v-for="elements in popularTopics">
+                                    > {{ elements }}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h5>POPULAR TOPICS</h5>
-                        <ul class="p-0">
-                            <li v-for="elements in popularTopics">
-                               > {{ elements }}
-                            </li>
-                        </ul>
+    
+                    <hr>
+    
+                    <div class="row d-flex align-items-center">
+                        <div class="col-8">
+                            &copy; Copiright 2012-2020 | Avada Theme by Michele Terzo | All Rights Reserved | Powered by Boolean Careers
+                        </div>
+                        <div class="col-4">
+                            <i class="fab fa-facebook-f fa-1x"></i>
+                            <i class="fab fa-twitter fa-1x"></i>
+                            <i class="fab fa-instagram fa-1x"></i>
+                            <i class="fab fa-youtube fa-1x"></i>
+                        </div>
+                        
                     </div>
-
-                    <div class="col">
-                        <h5>RECENT TOPICS</h5>
-                        <ul class="p-0">
-                            <li v-for="elements in popularTopics">
-                                > {{ elements }}
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <h5>LASTEST REPLIES</h5>
-                        <ul class="p-0">
-                            <li v-for="elements in popularTopics">
-                                > {{ elements }}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="row">
-                    <div class="col">
-                        &copy; Copiright 2012-2020 | Avada Theme by Michele Terzo | All Rights Reserved | Powered by Boolean Careers
-                    </div>
-                    <div class="col">
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x"></i>
-                        <i class="fab fa-youtube fa-2x"></i>
-                    </div>
-                    
                 </div>
             </div>
         </footer>

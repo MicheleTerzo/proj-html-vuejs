@@ -13,8 +13,13 @@
 body{
     font-family: 'Fira Sans', sans-serif;
 }
-a{
+a{  
+    color: #fff;
     text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    cursor: pointer;
 }
 ul{
     list-style: none;
@@ -30,7 +35,6 @@ h2{
     font-weight: 700;
     font-size: 45px;
 }
-
 .black{
     background-color: #000;
     
@@ -44,6 +48,17 @@ h2{
     color: #fff;
     font-weight: 700;
     font-size: 20px;
+    transition: background 300ms;
+}
+.button:hover{
+    color: #fff;
+    background-color: #fc8c5e;
+}
+.mini-hr{
+    width: 70px;
+    height: 2px;
+    background-color: #fc8c5e;
+    margin-top: 15px;
 }
 /* GENERAL */
 
@@ -51,6 +66,7 @@ h2{
 
 /* HEADER */
 
+/* nav-bar */
 nav{
     width: 100%;
     background-color: #27aabe;
@@ -65,13 +81,18 @@ nav li{
 nav li:nth-of-type(7){
     padding:5px 15px;
     background-color: black;
+    transition: background 300ms;
 }
-
-nav a{
-    padding: 10px;
-    background-color: black;
+nav li:nth-of-type(7):hover{
     color: #fff;
+    background-color: #fc8c5e;
 }
+nav a:hover{
+   color: #fff;
+}
+/* nav-bar */
+
+/* jumbotron */
 .hero{
     
     height: 950px;
@@ -86,8 +107,9 @@ nav a{
 }
 .hero h5{
     font-weight: 300;
-    margin: 50px 0px;
+    margin: 20px 0px 40px 0px;
 }
+
 
 
 .description{
@@ -99,11 +121,14 @@ nav a{
     font-weight: 300;
     font-size: 25px;
 }
+/* jumbotron */
 
 /* HEADER */
 
 
 /* MAIN CONTENT */
+
+/* Sezione ultime news  */
 .lastNewsContainer{
     background-color: #fff;
 }
@@ -113,15 +138,6 @@ nav a{
 .introductionText{
     text-align: center;
 }
-
-
-.mini-hr{
-    width: 70px;
-    height: 2px;
-    background-color: #fc8c5e;
-    margin-top: 15px;
-}
-
 .lastNewsContainer h5{
     font-size: 17px;
 }
@@ -134,7 +150,9 @@ font-size: 15px;
 .smallPosts img{
     width: 100%;
     margin-bottom: 10px;
+    transition
 }
+
 
 .featuredArticle{
     height: 600px;
@@ -154,22 +172,32 @@ font-size: 15px;
     color: #fff;
 }
 
+
 .tutorialArticle{
     margin: 15px 0px;
 }
 .tutorialArticle div:last-child{
     margin-left: 15px;
 }
+/* Sezione ultime news  */
 
 
-
-
+/* Sezione intermedia a sfondo nero */
 .redirection{
     height: 120px;
     background-color: black;
+    font-weight: 700;
+    font-size: 20px;
+    transition: background 300ms;
 }
+.redirection:hover{
+    background-color: #27aabe;
+
+}
+/* Sezione intermedia a sfondo nero */
 
 
+/* Sezione scelta del forum */
 .forumSections{
     background-color: #f2f2f2;
     padding: 50px 0px;
@@ -184,6 +212,13 @@ font-size: 15px;
     background-color: #fff;
     border-top: 3px solid #399bc0
 }
+.forumTabs{
+    transition: all 200ms ease-in-out;
+}
+.forumTabs:hover{
+    cursor: pointer;
+    color: #fc8c5e;
+}
 .forumSections i.fas, .forumSections i.fab{
     height: 80px;
     width: 80px;
@@ -195,8 +230,10 @@ font-size: 15px;
     border-radius: 50%;
 
 }
+/* Sezione scelta del forum */
 
 
+/* Sezione di join della community */
 .join{
     color: white;
     height: 500px;
@@ -215,7 +252,10 @@ font-size: 15px;
     margin-bottom: 30px;
 }
 
+/* Sezione di join della community */
 
+
+/* Iscrizione alla newsletter */
 .newsletter{
     text-align: center;
     height: 300px;
@@ -230,23 +270,49 @@ font-size: 15px;
     margin-right: 20px;
     padding: 5px;
 }
+/* Iscrizione alla newsletter */
+
+
 /* MAIN CONTENT */
 
 
-footer{
-    padding: 100px;
-    height: 500px;
+/* FOOTER */
+
+
+.bottomPageLinks{
+    padding: 100px 0px 100px 0px;
+    height: 550px;
 }
-footer li{
+.bottomPageLinks li{
     border-bottom: 1px solid #f2f2f2;
     line-height: 2.3;
 }
-footer i.fab{
+.bottomPageLinks i.fab{
+    margin-right: 5px;
     text-align: center;
-    line-height: 60px;
-    background-color: red;
+    line-height: 40px;
     color: white;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
+
+
+
+/* icone social */
+.bottomPageLinks i.fa-facebook-f{
+    background-color: #3c5998;
+}
+.bottomPageLinks i.fa-twitter{
+    background-color: #54acee;
+}
+.bottomPageLinks i.fa-instagram{
+    background-color: #3f729b;
+}
+.bottomPageLinks i.fa-youtube{
+    background-color: #cd201f;
+}
+/* icone social */
+
+
+/* FOOTER */

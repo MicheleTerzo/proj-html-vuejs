@@ -1,6 +1,6 @@
 Vue.config.devtools = true;
 
-const boolfix = new Vue({
+const myWebsite = new Vue({
     el : '#app',
     data : {
         navLinks : ['Home', 'Apple', 'Microsoft', 'Android', 'Forums', 'Contact us', 'JOIN US'],
