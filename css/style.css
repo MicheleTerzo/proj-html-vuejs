@@ -68,9 +68,11 @@ h2{
 
 /* nav-bar */
 nav{
+    position: fixed;
     width: 100%;
     background-color: #27aabe;
     height: 100px;
+    opacity: 0.85;
 }
 nav li{
     display: inline-block;
@@ -94,7 +96,6 @@ nav a:hover{
 
 /* jumbotron */
 .hero{
-    
     height: 950px;
     background-image: url('../img/home_slider_bg.jpg');
     background-size: cover;
